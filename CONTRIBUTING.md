@@ -3,10 +3,10 @@
 ## Ground rules
 
 - **Never commit directly to `main`.** All changes go through a Pull Request.
-  > Note: branch protection requiring a PR before merging is enforced by team
-  > convention. (GitHub branch-protection rules on private repos require
-  > GitHub Pro/Team; if the repo is on a free plan the rule is not enforced
-  > by GitHub itself — but the team agrees to follow it regardless.)
+  `main` is protected on GitHub: a PR with at least 1 approving review is
+  required before any merge, stale approvals are dismissed when new commits
+  are pushed, and force-pushes and branch deletion are blocked.
+  (Admins are exempt so emergency fixes remain possible.)
 
 ---
 
