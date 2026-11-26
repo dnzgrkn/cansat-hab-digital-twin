@@ -1,0 +1,32 @@
+# =============================================================================
+# mission_params.yaml
+# Single source of truth for all shared mission parameters.
+# Every module (descent/, analysis/, flight_software/, xr/, etc.) must read
+# values from this file. Do NOT hard-code mission values anywhere else.
+# Owner: Mustafa Kayaküçük
+# =============================================================================
+
+# --- Balloon / release ---
+release_altitude_m: 25000           # TODO: confirm
+separation_fraction: 0.9            # TODO: confirm  (PocketQube separates at 90% of peak altitude)
+
+# --- Container geometry ---
+container_diameter_mm: 131          # TODO: confirm
+container_length_mm: 190            # TODO: confirm
+
+# --- Mass budget ---
+total_mass_g_min: 800               # TODO: confirm
+total_mass_g_max: 900               # TODO: confirm
+
+# --- Descent rates ---
+container_descent_rate_mps: 10      # TODO: confirm  (target)
+container_descent_tolerance_mps: 3  # TODO: confirm  (±3 m/s)
+pq_descent_rate_mps_min: 3          # TODO: confirm
+pq_descent_rate_mps_max: 5          # TODO: confirm
+
+# --- Deployables ---
+boom_length_mm: 220                 # TODO: confirm  (magnetometer boom)
+
+# --- Thermal environment ---
+temp_cold_c: -56                    # TODO: confirm  (tropopause cold soak, °C)
+temp_hot_c: 60                      # TODO: confirm  (solar heating worst-case, °C)

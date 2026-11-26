@@ -1,0 +1,60 @@
+# =============================================================================
+# Root .gitignore — cansat-hab-digital-twin
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Editors ---
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- FreeCAD backups ---
+*.FCBak
+*.FCStd1
+
+# --- Elmer / Salome temporary output ---
+analysis/**/*.log
+ELMERSOLVER_STARTINFO
+
+# --- LaTeX build artifacts ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.log
+
+# --- Node / Open MCT ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Misc ---
+*.bak
+*.tmp

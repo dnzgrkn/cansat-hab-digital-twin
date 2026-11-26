@@ -1,0 +1,33 @@
+# =============================================================================
+# CODEOWNERS
+# Maps repository folders to their responsible team members.
+#
+# ACTION REQUIRED: Replace each @TODO-<name> placeholder with the actual
+# GitHub username of that team member, then delete this comment block.
+# =============================================================================
+
+# Default owner — catches everything not matched by a more specific rule
+*                       @dnzgrkn
+
+# Documentation & requirements
+/docs/                  @TODO-mustafa
+/params/                @TODO-mustafa
+
+# CAD & structural
+/cad/                   @TODO-ege
+/analysis/structural/   @TODO-caner @TODO-ege
+/analysis/thermal/      @TODO-huseyin
+
+# Descent model
+/descent/               @TODO-huseyin @TODO-caner
+
+# Flight software & telemetry
+/flight_software/       @dnzgrkn
+/telemetry/             @dnzgrkn
+
+# Ground station & tools
+/ground_station/        @TODO-mehmet
+/tools/                 @TODO-mehmet
+
+# XR / Unity
+/xr/                    @TODO-furkan

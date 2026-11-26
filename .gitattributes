@@ -1,0 +1,79 @@
+# =============================================================================
+# .gitattributes — Git LFS tracking and line-ending / merge-driver rules
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Git LFS — large binary files
+# -----------------------------------------------------------------------------
+
+# CAD / 3D geometry
+*.FCStd   filter=lfs diff=lfs merge=lfs -text
+*.step    filter=lfs diff=lfs merge=lfs -text
+*.stp     filter=lfs diff=lfs merge=lfs -text
+*.stl     filter=lfs diff=lfs merge=lfs -text
+*.obj     filter=lfs diff=lfs merge=lfs -text
+*.fbx     filter=lfs diff=lfs merge=lfs -text
+*.blend   filter=lfs diff=lfs merge=lfs -text
+*.glb     filter=lfs diff=lfs merge=lfs -text
+*.gltf    filter=lfs diff=lfs merge=lfs -text
+
+# Simulation results / meshes
+*.vtu     filter=lfs diff=lfs merge=lfs -text
+*.vtk     filter=lfs diff=lfs merge=lfs -text
+*.vtp     filter=lfs diff=lfs merge=lfs -text
+*.med     filter=lfs diff=lfs merge=lfs -text
+*.unv     filter=lfs diff=lfs merge=lfs -text
+*.hdf     filter=lfs diff=lfs merge=lfs -text
+*.h5      filter=lfs diff=lfs merge=lfs -text
+
+# Images / textures
+*.png     filter=lfs diff=lfs merge=lfs -text
+*.jpg     filter=lfs diff=lfs merge=lfs -text
+*.jpeg    filter=lfs diff=lfs merge=lfs -text
+*.psd     filter=lfs diff=lfs merge=lfs -text
+*.tga     filter=lfs diff=lfs merge=lfs -text
+*.tif     filter=lfs diff=lfs merge=lfs -text
+*.exr     filter=lfs diff=lfs merge=lfs -text
+*.hdr     filter=lfs diff=lfs merge=lfs -text
+
+# Audio / video
+*.wav     filter=lfs diff=lfs merge=lfs -text
+*.mp3     filter=lfs diff=lfs merge=lfs -text
+*.ogg     filter=lfs diff=lfs merge=lfs -text
+*.mp4     filter=lfs diff=lfs merge=lfs -text
+*.mov     filter=lfs diff=lfs merge=lfs -text
+
+# Native libraries / binaries
+*.dll     filter=lfs diff=lfs merge=lfs -text
+*.so      filter=lfs diff=lfs merge=lfs -text
+*.dylib   filter=lfs diff=lfs merge=lfs -text
+*.a       filter=lfs diff=lfs merge=lfs -text
+
+# Unity packages (binary)
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+
+# Documents
+*.pdf     filter=lfs diff=lfs merge=lfs -text
+*.docx    filter=lfs diff=lfs merge=lfs -text
+*.pptx    filter=lfs diff=lfs merge=lfs -text
+*.xlsx    filter=lfs diff=lfs merge=lfs -text
+
+# -----------------------------------------------------------------------------
+# Unity YAML files — these are TEXT, NOT in LFS.
+# Each team member must configure UnityYAMLMerge locally; see CONTRIBUTING.md.
+# -----------------------------------------------------------------------------
+*.unity  merge=unityyamlmerge eol=lf
+*.prefab merge=unityyamlmerge eol=lf
+*.asset  text eol=lf
+
+# -----------------------------------------------------------------------------
+# Source / text files — normalize line endings to LF
+# -----------------------------------------------------------------------------
+*.cs     text eol=lf
+*.py     text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.md     text eol=lf
+*.csv    text eol=lf
+*.json   text eol=lf
+*.txt    text eol=lf
